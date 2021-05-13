@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap');
+
+    html ,body{
+    font-family: 'Sarabun', sans-serif;
+    color: black;
+    margin : 0;
+    padding : 0;
+    background-color: #fff ;
+    }
+    input{
+        width: 50%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        position: absolute;
+        left : 300px;
+        box-sizing: border-box;
+    }
+    input[type=text]:focus {
+    background-color: lightblue;
+    }
+    input[type=submit]{
+    background-color: #3399ff;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color:#3366ff;
+    }
+    input[type=submit]:active {
+        position:relative;
+	    top:1px;
+    }
+    label{
+        position: absolute;
+        left : 300px;
+    }
+    .button {
+	background-color:#00bb00;
+	border-radius:18px;
+	border:1px solid #00bb00;
+	display:inline-block;
+	cursor:pointer;
+	color: #fff;
+	font-family:'Sarabun', sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	padding:10px 30px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #00bb00;
+    position: absolute;
+    left : 1150px;
+    }
+    .button:hover {
+	background-color:#00cc33;
+    }
+    .button:active {
+	position:relative;
+	top:1px;
+    }
+    
+    .for{
+        position: absolute;
+        left : 300px;
+    }
+    </style>
+</head>
+<body>
+    <div w3-include-HTML="styleim.html"></div>
+    <script src="w3-include-HTML.js"></script>
+
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <!-- Content -->
+            <div class="container-fluid">
+                <!-- Brand -->
+    
+                <a href="#" class="navbar-brand">iMEBOOKs</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Menu -->
+                <div class="collapse navbar-collapse" id="navbarToggle">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="margin-left:20px;" onclick=" document.location = 'index.html'">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="margin-left:20px;">ซีรีย์สุดฮอต</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="margin-left:20px;">KIDDY & PARENTING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="margin-left:20px;">เยาวชน</a>
+                        </li>                
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="margin-left:20px;">นวนิยาย</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" style="margin-left:20px;">ผู้ใหญ่</a>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-left:20px;">
+                            <a href="#" 
+                            class="nav-link dropdown-toggle" 
+                            data-bs-toggle="dropdown">ข่าวสาร</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">เนื้อหาทั้งหมด</a></li>
+                                <li><a href="#" class="dropdown-item">เนื้อหาความรู้</a></li>
+                                <li><a href="#" class="dropdown-item">ข่าวสารกิจกรรม</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown" style="margin-left:200px;">
+                            <img style="margin-top:50%;" border="0" src="https://i.pinimg.com/originals/ad/77/a7/ad77a7454b3c2f45a088da7f02b475c4.png"
+                            width="20" height="20">
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" 
+                            class="nav-link dropdown-toggle"
+                            data-bs-toggle="dropdown">บัญชีของฉัน</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" class="dropdown-item">เข้าสู่ระบบ</a></li>
+                                <li><a href="#" class="dropdown-item">ลงทะเบียน</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item" style="margin-left:20px;">
+                            <img style="margin-top:40%;" border="0" src="https://i.pinimg.com/originals/52/d6/3d/52d63d1224365cb934d6956d46b9533d.png"
+                            width="25" height="25">
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ตะกร้าสินค้า</a>
+                        </li>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class="for">
+    <h2>ที่อยู่จัดส่ง</h2>
+    </div>
+        <br>
+        <br>
+    <form action="process.php" method="post" target="iframe_target">
+        <iframe id="iframe_target" name="iframe_target" src="#" style="width:0;height:0;border:0px solid #fff;"></iframe>
+        <script language="JavaScript">
+            function showResult(result){
+            if(result==1){
+                document.getElementById("divResult").innerHTML = "<font color=green> Save successfully! </font>  <br>";
+            }else{
+                document.getElementById("divResult").innerHTML = "<font color=red> Error!! Cannot save data </font> <br>";}
+            }
+        </script>
+        <div id="divResult"></div>
+        <label>ชื่อ-สกุล</label><br>
+        <input type="text" name="user">
+        <br>
+        <br>
+        <br>
+        <label>เบอร์โทร</label><br>
+        <input type="text" name="tel">
+        <br>
+        <br>
+        <br>
+        <label>ที่อยู่จัดส่ง</label><br>
+        <input type="text" name="adds">
+        <br>
+        <br>
+        <br>
+        <label>รหัสไปรษณีย์</label><br>
+        <input type="text" name="zip">
+        <br>
+        <br>
+        <br>
+        <input type="submit" value="ยืนยันข้อมูล">
+        <br>
+        <br>
+        <br>
+        <br>
+    </form>
+    <div class="button">
+        <form id="checkoutForm" method="POST" action="check.php">
+            <script type="text/javascript" src="https://cdn.omise.co/omise.js"
+                    data-key="pkey_test_5nrcrcdovncjon6xew4"
+                    data-image="https://preview.pixlr.com/images/800wm/1503/1/1503117368.jpg"
+                    data-amount="12345"
+                    data-currency="THB"
+                    data-frame-label="Payment"
+                    data-default-payment-method="credit_card">
+            </script>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iMEBOOKs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> 
+</head>
+    <style>
+
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .column {
+            float: left;
+            width: 23%;
+            padding: 1%;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .responsive1 {
+            width: 101%;
+            height: auto;
+        }
+
+        .responsive2 {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+        }
+
+        button {
+            padding: 5px 5px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            border: 0px;
+            background: transparent;
+            position: relative;
+            margin: 0px;
+            transition: all 0.25 ease;
+        }
+
+        .btn-1:hover::after {
+            width: 100%;
+        }
+        .btn-1::after {
+            content: "";
+            position: absolute;
+            border-radius: inherit;
+            width: 10%;
+            height: 2px;
+            background: rgb(202, 95, 95);
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: all 0.25s ease;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    </style>
+
+<body style="height: 500px;">
+    <div class="fixed-top">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- Content -->
+        <div class="container-fluid">
+            <!-- Brand -->
+
+            <a href="#" class="navbar-brand">iMEBOOKs</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarToggle">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="margin-left:20px;">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="margin-left:20px;">ซีรีย์สุดฮอต</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="margin-left:20px;">KIDDY & PARENTING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="margin-left:20px;">เยาวชน</a>
+                    </li>                
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="margin-left:20px;">นวนิยาย</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" style="margin-left:20px;">ผู้ใหญ่</a>
+                    </li>
+                    <li class="nav-item dropdown" style="margin-left:20px;">
+                        <a href="#" 
+                        class="nav-link dropdown-toggle" 
+                        data-bs-toggle="dropdown">ข่าวสาร</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">เนื้อหาทั้งหมด</a></li>
+                            <li><a href="#" class="dropdown-item">เนื้อหาความรู้</a></li>
+                            <li><a href="#" class="dropdown-item">ข่าวสารกิจกรรม</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown" style="margin-left:200px;">
+                        <img style="margin-top:50%;" border="0" src="https://i.pinimg.com/originals/ad/77/a7/ad77a7454b3c2f45a088da7f02b475c4.png"
+                        width="20" height="20">
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" 
+                        class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">บัญชีของฉัน</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">บัญชีของฉัน</a></li>
+                            <li><a href="#" class="dropdown-item">ออกจากระบบ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="margin-left:20px;">
+                        <img style="margin-top:40%;" border="0" src="https://i.pinimg.com/originals/52/d6/3d/52d63d1224365cb934d6956d46b9533d.png"
+                        width="25" height="25">
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">ตะกร้าสินค้า</a>
+                    </li>
+                </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <div style="margin-top:3%;">
+        <aside>
+            <br>
+            <form class="d-flex pt-4">
+                <input type="text" class="form-control" style="margin-left:10%;" placeholder="ค้นหารายการ...">
+                <input type="submit" value="ค้นหา" class="btn btn-outline-dark" style="margin-right:10%;">
+            </form>
+            <img style="margin-top:1%;" border="0" src="https://i.pinimg.com/originals/9c/90/01/9c9001fbbb92dff3e1399137eacbf551.jpg" alt="banner" class="responsive1">
+          </aside>
+    </div>
+ 
+    <section style="margin-left: 10%;">
+            <p class="h3" style="margin-top: 3%;">หนังสือขายดี</p>
+            <hr width="90%" size="4" align="center" color="#000" noshade>
+            <div class="row">
+                <!--book 1 -->
+                <div class="column">                
+                    <img class="responsive2" style="margin-bottom: 2%; margin-right: 10%;" border="0" src="https://image.freepik.com/free-psd/reading-concept-book-mock-up_23-2148622980.jpg"
+                    alt="banner1" width="250" height="300">
+                    <br>
+                    <div>
+                        <h5 class="text-danger d-inline" style="margin-left: 25%; font-size:2vw;">฿165</h5>
+                        <del class="h6 d-inline text-secondary" style="font-size:1.2vw;">195</del>
+                        <h5 class="fw-bold" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; font-size:1.4vw;">หนังสือเล่มที่ 05</h5>
+                        <button class="h6 btn btn-outline-danger btn-sm" style="margin-left: 25%; margin-bottom: 2%; font-size:1.2vw; ">เพิ่มลงรถเข็น</button>
+                     <button class="h6 btn-1 " style="margin-left: 25%; font-size:1.2vw;">ดูรายละเอียด</button> 
+                    </div>
+                </div>
+
+                <!--book 2 -->
+                <div class="column">                
+                    <img class="responsive2" style="margin-bottom: 2%; margin-right: 40px;" border="0" src="https://image.freepik.com/free-psd/reading-concept-book-mock-up_23-2148622980.jpg"
+                    alt="banner1" width="250" height="300">
+                    <br>
+                    <div>
+                        <h5 class="text-danger d-inline" style="margin-left: 25%; font-size:2vw;">฿280</h5>
+                        <del class="h6 d-inline text-secondary" style="font-size:1.2vw;">325</del>
+                        <h5 class="fw-bold" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; font-size:1.4vw;">หนังสือเล่มที่ 06</h5>
+                        <button class="h6 btn btn-outline-danger btn-sm" style="margin-left: 25%; margin-bottom: 2%; font-size:1.2vw; ">เพิ่มลงรถเข็น</button>
+                     <button class="h6 btn-1 " style="margin-left: 25%; font-size:1.2vw;">ดูรายละเอียด</button> 
+                    </div>
+                </div>
+
+                <!--book 3 -->
+                <div class="column">                
+                    <img class="responsive2" style="margin-bottom: 2%; margin-right: 40px;" border="0" src="https://image.freepik.com/free-psd/reading-concept-book-mock-up_23-2148622980.jpg"
+                    alt="banner1" width="250" height="300">
+                    <br>
+                    <div>
+                        <h5 class="text-danger d-inline" style="margin-left: 25%; font-size:2vw;">฿120</h5>
+                        <del class="h6 d-inline text-secondary" style="font-size:1.2vw;">135</del>
+                        <h5 class="fw-bold" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; font-size:1.4vw;">หนังสือเล่มที่ 07</h5>
+                        <button class="h6 btn btn-outline-danger btn-sm" style="margin-left: 25%; margin-bottom: 2%; font-size:1.2vw; ">เพิ่มลงรถเข็น</button>
+                     <button class="h6 btn-1 " style="margin-left: 25%; font-size:1.2vw;">ดูรายละเอียด</button> 
+                    </div>
+                </div>
+
+                <!--book 4 -->
+                <div class="column">                
+                    <img class="responsive2" style="margin-bottom: 2%; margin-right: 40px;" border="0" src="https://image.freepik.com/free-psd/reading-concept-book-mock-up_23-2148622980.jpg"
+                    alt="banner1" width="250" height="300">
+                    <br>
+                    <div>
+                        <h5 class="text-danger d-inline" style="margin-left: 25%; font-size:2vw;">฿120</h5>
+                        <del class="h6 d-inline text-secondary" style="font-size:1.2vw;">135</del>
+                        <h5 class="fw-bold" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; font-size:1.4vw;">หนังสือเล่มที่ 08</h5>
+                        <button class="h6 btn btn-outline-danger btn-sm" style="margin-left: 25%; margin-bottom: 2%; font-size:1.2vw; ">เพิ่มลงรถเข็น</button>
+                     <button class="h6 btn-1 " style="margin-left: 25%; font-size:1.2vw;">ดูรายละเอียด</button> 
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section style="margin-left: 10%;">
+        <p class="h3" style="margin-top: 3%;">หนังสือแนะนำ</p>
+        <hr width="90%" size="4" align="center" color="#000" noshade>
+        <div class="row">
+            <!--book 1 -->
+            <div class="column">                
+                <img class="responsive2" style="margin-bottom: 2%; margin-right: 10%;" border="0" src="https://image.freepik.com/free-psd/flat-lay-purple-book-mock-up_23-2148622996.jpg"
+                alt="banner1" width="250" height="300">
+                <br>
+                <div>
+                    <h5 class="text-danger d-inline" style="margin-left: 20%; font-size:2vw;">฿2,340</h5>
+                    <del class="h6 d-inline text-secondary" style="font-size:1.2vw;">2,925</del>
+                    <h5 class="fw-bold" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; font-size:1.4vw;">หนังสือเล่มที่ 01</h5>
+                    <button class="h6 btn btn-outline-danger btn-sm" style="margin-left: 25%; margin-bottom: 2%; font-size:1.2vw; ">เพิ่มลงรถเข็น</button>
+                 <button class="h6 btn-1 " style="margin-left: 25%; font-size:1.2vw;">ดูรายละเอียด</button> 
+                </div>
+            </div>
+
+            <!--book 2 -->
+            <div class="column">                
+                <img class="responsive2" style="margin-bottom: 2%; margin-right: 40px;" border="0" src="https://image.freepik.com/free-psd/flat-lay-purple-book-mock-up_23-2148622996.jpg"
+                alt="banner1" width="250" height="300">
+                <br>
+                <div>
+                    <h5 class="text-danger d-inline" style="margin-left: 20%; font-size:2vw;">฿3,145</h5>
+                    <del class="h6 d-inline text-secondary" style="font-size:1.2vw;">3,495</del>
+                    <h5 class="fw-bold" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; font-size:1.4vw;">หนังสือเล่มที่ 02</h5>
+                    <button class="h6 btn btn-outline-danger btn-sm" style="margin-left: 25%; margin-bottom: 2%; font-size:1.2vw; ">เพิ่มลงรถเข็น</button>
+                 <button class="h6 btn-1 " style="margin-left: 25%; font-size:1.2vw;">ดูรายละเอียด</button> 
+                </div>
+            </div>
+
+            <!--book 3 -->
+            <div class="column">                
+                <img class="responsive2" style="margin-bottom: 2%; margin-right: 40px;" border="0" src="https://image.freepik.com/free-psd/flat-lay-purple-book-mock-up_23-2148622996.jpg"
+                alt="banner1" width="250" height="300">
+                <br>
+                <div>
+                    <h5 class="text-danger d-inline" style="margin-left: 25%; font-size:2vw;">฿220</h5>
+                    <del class="h6 d-inline text-secondary" style="font-size:1.2vw;">245</del>
+                    <h5 class="fw-bold" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; font-size:1.4vw;">หนังสือเล่มที่ 03</h5>
+                    <button class="h6 btn btn-outline-danger btn-sm" style="margin-left: 25%; margin-bottom: 2%; font-size:1.2vw; ">เพิ่มลงรถเข็น</button>
+                 <button class="h6 btn-1 " style="margin-left: 25%; font-size:1.2vw;">ดูรายละเอียด</button> 
+                </div>
+            </div>
+
+            <!--book 4 -->
+            <div class="column">                
+                <img class="responsive2" style="margin-bottom: 2%; margin-right: 40px;" border="0" src="https://image.freepik.com/free-psd/flat-lay-purple-book-mock-up_23-2148622996.jpg"
+                alt="banner1" width="250" height="300">
+                <br>
+                <div>
+                    <h5 class="text-danger d-inline" style="margin-left: 25%; font-size:2vw;">฿134</h5>
+                    <del class="h6 d-inline text-secondary" style="font-size:1.2vw;">148</del>
+                    <h5 class="fw-bold" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; font-size:1.4vw;">หนังสือเล่มที่ 04</h5>
+                    <button class="h6 btn btn-outline-danger btn-sm" style="margin-left: 25%; margin-bottom: 2%; font-size:1.2vw; ">เพิ่มลงรถเข็น</button>
+                 <button class="h6 btn-1 " style="margin-left: 25%; font-size:1.2vw;">ดูรายละเอียด</button> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div style="text-align: center; background-color:#fef;"">
+            <img src="https://i.pinimg.com/originals/b7/63/69/b763699fd1fa3bfb374442593ae642e1.png" alt="facebook"
+            width="2%" height="2%">
+            <img border="0" src="https://i.pinimg.com/originals/63/9b/3d/639b3dafb544d6f061fcddd2d6686ddb.png" alt="instagram"
+            width="2.3%" height="2.3%">
+            <img border="0" src="https://i.pinimg.com/originals/5c/a9/8c/5ca98c73b2bb7a02bf8350933c7ca443.png" alt="twitter"
+            width="2%" height="2%">
+            <img border="0" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/line_black_logo_icon_147115.png" alt="lineApp"
+            width="1.7%" height="1.7%">
+            <p class="pt-1 pb-2 text-light" style="text-align: center; background-color: #000; font-size:0.8vw;">Copyright © 2021 iMEBOOKs</p>
+        </div>
+    </footer>
+
+</body>
+</html>
